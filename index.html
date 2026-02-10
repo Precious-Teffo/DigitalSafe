@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalSafe - Your Guide to Staying Safe Online</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    
+    <div class="achievement-popup" id="achievementPopup">
+        <div style="font-size: 2em; text-align: center; margin-bottom: 10px;">🏆</div>
+        <div style="font-weight: bold; font-size: 1.2em; color: #1e293b;" id="achievementTitle"></div>
+        <div style="opacity: 0.8; margin-top: 5px; color: #475569;" id="achievementDesc"></div>
+    </div>
+
+    <div class="container">
+        <header>
+          <h1>🛡️ DigitalSafe</h1>
+          <p class="tagline">Your Guide to Staying Safe Online</p>
+</header>
+
+        <div class="stats-bar">
+            <div class="stat-card">
+                <div class="stat-value" id="shieldScore">850</div>
+                <div class="stat-label">Shield Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="threatsBlocked">0</div>
+                <div class="stat-label">Threats Blocked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="userLevel">1</div>
+                <div class="stat-label">Guardian Level</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="streakDays">0</div>
+                <div class="stat-label">Day Streak 🔥</div>
+            </div>
+        </div>
+
+        <!-- Educational Learning Hub -->
+        <div class="panel" style="grid-column: 1 / -1;">
+            <div class="panel-header">
+                <span class="panel-icon">📚</span>
+                <div>
+                    <div class="panel-title">Security Education Hub</div>
+                    <div style="font-size: 0.85em; color: #64748b; margin-top: 5px;">Learn cybersecurity fundamentals at your own pace</div>
+                </div>
+                <span class="ai-badge">LEARN</span>
+            </div>
+
+            <div class="tabs" style="margin-bottom: 24px;">
+                <div class="tab active" onclick="switchLearningTab('basics', event)">🎓 Basics</div>
+                <div class="tab" onclick="switchLearningTab('advanced', event)">🚀 Advanced</div>
+                <div class="tab" onclick="switchLearningTab('families', event)">👨‍👩‍👧‍👦 For Families</div>
+                <div class="tab" onclick="switchLearningTab('business', event)">💼 For Business</div>
+            </div>
+
+            <div id="learning-basics" class="tab-content active">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div class="lesson-card" onclick="openLesson('passwords')">
+                        <div class="lesson-icon">🔑</div>
+                        <h3>Password Security 101</h3>
+                        <p>Learn how to create unbreakable passwords and manage them safely</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 25 min</span>
+                            <span>📊 Essential</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('phishing')">
+                        <div class="lesson-icon">🎣</div>
+                        <h3>Recognizing Phishing Attacks</h3>
+                        <p>Identify fake emails, messages, and websites designed to steal your info</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 30 min</span>
+                            <span>📊 Essential</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('2fa')">
+                        <div class="lesson-icon">📱</div>
+                        <h3>Two-Factor Authentication</h3>
+                        <p>Add an extra layer of security - blocks 99.9% of attacks!</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 28 min</span>
+                            <span>📊 Essential</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('social-engineering')">
+                        <div class="lesson-icon">🎭</div>
+                        <h3>Social Engineering Defense</h3>
+                        <p>Recognize psychological manipulation tactics used by attackers</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 22 min</span>
+                            <span>📊 Essential</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('data-breaches')">
+                        <div class="lesson-icon">🚨</div>
+                        <h3>Data Breach Response</h3>
+                        <p>What to do when your information has been compromised</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 18 min</span>
+                            <span>📊 Essential</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="learning-advanced" class="tab-content">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div class="lesson-card" onclick="openLesson('vpn')">
+                        <div class="lesson-icon">🛡️</div>
+                        <h3>VPNs and Encryption</h3>
+                        <p>Protect your internet traffic and privacy with VPN technology</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 25 min</span>
+                            <span>📊 Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('secure-devices')">
+                        <div class="lesson-icon">💻</div>
+                        <h3>Securing Your Devices</h3>
+                        <p>Comprehensive security for phones, tablets, and computers</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 30 min</span>
+                            <span>📊 Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('malware')">
+                        <div class="lesson-icon">🦠</div>
+                        <h3>Understanding Malware</h3>
+                        <p>Viruses, ransomware, spyware and how to protect yourself</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 28 min</span>
+                            <span>📊 Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('privacy')">
+                        <div class="lesson-icon">🔒</div>
+                        <h3>Online Privacy Protection</h3>
+                        <p>Control your data and protect your digital footprint</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 26 min</span>
+                            <span>📊 Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="learning-families" class="tab-content">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div class="lesson-card" onclick="openLesson('kids-safety')">
+                        <div class="lesson-icon">👶</div>
+                        <h3>Teaching Kids Internet Safety</h3>
+                        <p>Age-appropriate strategies to keep children safe online</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 24 min</span>
+                            <span>📊 For Parents</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('parental-controls')">
+                        <div class="lesson-icon">🔧</div>
+                        <h3>Setting Up Parental Controls</h3>
+                        <p>Step-by-step guide for all devices and platforms</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 28 min</span>
+                            <span>📊 For Parents</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('elderly-safety')">
+                        <div class="lesson-icon">👴</div>
+                        <h3>Protecting Seniors from Scams</h3>
+                        <p>Help elderly family members avoid common online scams</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 22 min</span>
+                            <span>📊 For Caregivers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="learning-business" class="tab-content">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div class="lesson-card" onclick="openLesson('business-security')">
+                        <div class="lesson-icon">🏢</div>
+                        <h3>Small Business Cybersecurity</h3>
+                        <p>Essential security practices for protecting your business</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 32 min</span>
+                            <span>📊 Business</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('employee-training')">
+                        <div class="lesson-icon">👥</div>
+                        <h3>Employee Security Training</h3>
+                        <p>Build a security-aware culture in your organization</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 35 min</span>
+                            <span>📊 Business</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('incident-response')">
+                        <div class="lesson-icon">🚨</div>
+                        <h3>Incident Response Planning</h3>
+                        <p>Prepare for and respond to security incidents effectively</p>
+                        <div class="lesson-meta">
+                            <span>⏱️ 30 min</span>
+                            <span>📊 Business</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Lesson Modal -->
+        <div id="lessonModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 2000; overflow-y: auto; padding: 20px;">
+            <div style="max-width: 900px; margin: 40px auto; background: white; border-radius: 20px; padding: 40px; position: relative;">
+                <button onclick="closeLesson()" style="position: absolute; top: 20px; right: 20px; background: #f1f5f9; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5em; color: #64748b;">×</button>
+                <div id="lessonContent"></div>
+            </div>
+        </div>
+
+        <!-- Daily Security Challenge -->
+        <div class="panel" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 2px solid #0ea5e9;">
+            <div class="panel-header" style="border-bottom-color: #bae6fd;">
+                <span class="panel-icon">🎯</span>
+                <div>
+                    <div class="panel-title" style="color: #0c4a6e;">Today's Security Challenge</div>
+                    <div style="font-size: 0.85em; color: #075985; margin-top: 5px;">Complete daily challenges to boost your Shield Score</div>
+                </div>
+                <span class="ai-badge" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">DAILY</span>
+            </div>
+
+            <div id="dailyChallenge" style="padding: 20px; background: white; border-radius: 12px; border: 1px solid #e0f2fe;">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <!-- AI Threat Analyzer -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-icon">🤖</span>
+                    <div>
+                        <div class="panel-title">AI Threat Analyzer</div>
+                        <div style="font-size: 0.85em; color: #9ca3af; margin-top: 5px;">Deep learning-powered scam detection</div>
+                    </div>
+                    <span class="ai-badge">AI POWERED</span>
+                </div>
+
+                <div class="input-container">
+                    <textarea 
+                        id="threatInput" 
+                        class="ai-input" 
+                        placeholder="Paste suspicious message, email, URL, or describe a situation...
+
+Example: Got an email saying my Amazon account was suspended and I need to verify my payment info immediately..."
+                    ></textarea>
+                </div>
+
+                <button class="btn" id="analyzeBtn" onclick="analyzeWithAI()">
+                    <span id="analyzeBtnText">🔍 Analyze with AI</span>
+                </button>
+
+                <div id="aiAnalysisResult" class="ai-analysis"></div>
+            </div>
+
+            <!-- Live Threat Intelligence -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-icon">🌐</span>
+                    <div>
+                        <div class="panel-title">Live Threat Feed</div>
+                        <div style="font-size: 0.85em; color: #9ca3af; margin-top: 5px;">Real-time community reports</div>
+                    </div>
+                </div>
+
+                <div class="community-feed" id="communityFeed">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Engineering Simulator -->
+        <div class="panel">
+            <div class="panel-header">
+                <span class="panel-icon">🎭</span>
+                <div class="panel-title">Social Engineering Simulator</div>
+                <span class="ai-badge">INTERACTIVE</span>
+            </div>
+
+            <p style="color: #64748b; margin-bottom: 20px;">Experience realistic social engineering attacks in a safe environment. Learn to recognize manipulation tactics.</p>
+
+            <div id="socialEngScenario" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #fbbf24; border-radius: 12px; padding: 24px; margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div style="width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2em;">
+                        👤
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-weight: 700; color: #78350f; font-size: 1.1em;" id="attackerName">Unknown Caller</div>
+                        <div style="color: #92400e; font-size: 0.9em;" id="attackerRole">Claims to be from IT Support</div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 16px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                    <div style="color: #1e293b; line-height: 1.6;" id="attackerMessage">
+                        "Hi, this is John from IT. We've detected suspicious activity on your account. I need you to verify your username and password immediately to secure your account."
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <strong style="color: #1e293b; display: block; margin-bottom: 12px;">How do you respond?</strong>
+                <div style="display: grid; gap: 12px;">
+                    <button class="choice-btn" onclick="respondToSocialEng('comply')" style="text-align: left;">
+                        ✅ Provide the requested information to help IT secure my account
+                    </button>
+                    <button class="choice-btn" onclick="respondToSocialEng('verify')" style="text-align: left;">
+                        ⚠️ Ask for their employee ID and call back through official IT number
+                    </button>
+                    <button class="choice-btn" onclick="respondToSocialEng('suspicious')" style="text-align: left;">
+                        🚨 Recognize this as a social engineering attack and report it
+                    </button>
+                    <button class="choice-btn" onclick="respondToSocialEng('ignore')" style="text-align: left;">
+                        🤷 Hang up without saying anything
+                    </button>
+                </div>
+            </div>
+
+            <div id="socialEngResult" style="display: none; margin-top: 20px;"></div>
+
+            <button class="btn" onclick="loadNewSocialEngScenario()" style="width: 100%; margin-top: 16px;">
+                🔄 Try New Scenario
+            </button>
+        </div>
+
+        <!-- Password Strength Checker -->
+        <div class="panel">
+            <div class="panel-header">
+                <span class="panel-icon">🔑</span>
+                <div class="panel-title">Password Strength Analyzer</div>
+                <span class="ai-badge">REAL-TIME</span>
+            </div>
+
+            <div class="input-group">
+                <label for="passwordInput" style="color: #1e293b; font-weight: 600;">Test Your Password Strength</label>
+                <input 
+                    type="password" 
+                    id="passwordInput" 
+                    class="ai-input" 
+                    placeholder="Enter a password to analyze..."
+                    oninput="analyzePassword()"
+                    style="font-family: monospace; min-height: auto;"
+                >
+                <div style="margin-top: 8px;">
+                    <label style="font-size: 0.9em; color: #64748b; font-weight: 400;">
+                        <input type="checkbox" id="showPassword" onchange="togglePassword()" style="margin-right: 8px;">
+                        Show password
+                    </label>
+                </div>
+            </div>
+
+            <div id="passwordStrengthResult" style="margin-top: 20px; display: none;">
+                <div class="threat-meter" style="background: #f8fafc;">
+                    <div style="margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+                        <strong style="font-size: 1.1em; color: #1e293b;">Strength Score</strong>
+                        <span id="strengthPercentage" class="confidence-score">0%</span>
+                    </div>
+                    <div class="xp-bar" style="height: 12px; margin-top: 12px;">
+                        <div id="strengthBar" class="xp-fill" style="width: 0%"></div>
+                    </div>
+                    <div id="strengthLabel" style="text-align: center; margin-top: 12px; font-weight: 700; font-size: 1.1em;"></div>
+                </div>
+
+                <div id="passwordFeedback" style="margin-top: 16px;"></div>
+            </div>
+        </div>
+
+        <!-- Breach Checker -->
+        <div class="panel">
+            <div class="panel-header">
+                <span class="panel-icon">🛡️</span>
+                <div class="panel-title">Data Breach Checker</div>
+                <span class="ai-badge">SECURE</span>
+            </div>
+
+            <p style="color: #64748b; margin-bottom: 20px;">Check if your email has been compromised in known data breaches. We use secure hashing - your email is never stored.</p>
+
+            <div class="input-group">
+                <label for="breachEmail" style="color: #1e293b; font-weight: 600;">Email Address</label>
+                <input 
+                    type="email" 
+                    id="breachEmail" 
+                    class="ai-input" 
+                    placeholder="your.email@example.com"
+                    style="min-height: auto;"
+                >
+            </div>
+
+            <button class="btn" onclick="checkBreach()">🔍 Check for Breaches</button>
+
+            <div id="breachResult" style="margin-top: 20px; display: none;"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
