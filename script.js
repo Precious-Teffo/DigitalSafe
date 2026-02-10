@@ -598,6 +598,860 @@ const lessons = {
     // Include all other lessons from the original file (vpn, secure-devices, malware, privacy, kids-safety, parental-controls, elderly-safety, business-security, employee-training, incident-response)
     // [Previous lesson definitions continue here - I'll include a few more key ones]
     
+    'safe-browsing': {
+        title: "Safe Browsing Practices",
+        icon: "🌐",
+        content: `
+            <div class="lesson-section">
+                <h2>Why Safe Browsing Matters</h2>
+                <p>Your web browser is your gateway to the internet. Unsafe browsing practices can expose you to malware, phishing, tracking, and data theft. Learning to browse safely protects your privacy, security, and personal information.</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Essential Browser Security Settings</h2>
+                
+                <h3>1. Keep Your Browser Updated</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Enable automatic updates</li>
+                    <li>Use the latest version of Chrome, Firefox, Safari, or Edge</li>
+                    <li>Security patches fix vulnerabilities hackers exploit</li>
+                </ul>
+
+                <h3>2. Use HTTPS Everywhere</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Look for the padlock icon in address bar</li>
+                    <li>Install HTTPS Everywhere browser extension</li>
+                    <li>Never enter passwords on HTTP sites</li>
+                </ul>
+
+                <div class="lesson-warning">
+                    <strong>⚠️ Warning:</strong> HTTPS encrypts your connection but doesn't guarantee a site is legitimate. Phishing sites can also use HTTPS!
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Dangerous Downloads to Avoid</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>Pirated software:</strong> Often contains malware</li>
+                    <li><strong>Browser toolbars:</strong> Usually spyware or adware</li>
+                    <li><strong>Fake download buttons:</strong> Ads disguised as downloads</li>
+                    <li><strong>Email attachments from strangers:</strong> High risk of viruses</li>
+                    <li><strong>"Codec" or "player" updates:</strong> Usually malware</li>
+                </ul>
+
+                <div class="lesson-tip">
+                    <strong>💡 Safe Download Rule:</strong> Only download from official sources. For software, go directly to the company's website, not third-party download sites.
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Recommended Browser Extensions</h2>
+                
+                <h3>Privacy & Security Extensions:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>uBlock Origin:</strong> Blocks ads and malicious scripts</li>
+                    <li><strong>Privacy Badger:</strong> Stops invisible trackers</li>
+                    <li><strong>HTTPS Everywhere:</strong> Forces encrypted connections</li>
+                    <li><strong>Bitwarden/1Password:</strong> Password manager integration</li>
+                </ul>
+
+                <div class="lesson-warning">
+                    <strong>⚠️ Extension Warning:</strong> Only install extensions from official stores. Too many extensions slow down your browser and can be security risks themselves.
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Recognizing Suspicious Websites</h2>
+                
+                <h3>Red Flags:</h3>
+                <ol style="line-height: 2; margin-left: 20px;">
+                    <li><strong>Misspelled URLs:</strong> "amaz0n.com" instead of "amazon.com"</li>
+                    <li><strong>Excessive pop-ups:</strong> Legitimate sites don't bombard you</li>
+                    <li><strong>Too many ads:</strong> Especially fake "download" buttons</li>
+                    <li><strong>Requests for unnecessary info:</strong> Why does a recipe site need your SSN?</li>
+                    <li><strong>Poor design:</strong> Broken images, bad grammar, unprofessional look</li>
+                    <li><strong>Urgent warnings:</strong> "Your computer is infected!" pop-ups are scams</li>
+                </ol>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Safe Browsing Habits</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Use private/incognito mode for sensitive browsing</li>
+                    <li>Clear cookies and cache regularly</li>
+                    <li>Use different browsers for different activities (work vs personal)</li>
+                    <li>Never save passwords in browser if others use your device</li>
+                    <li>Log out of accounts when finished, especially on shared computers</li>
+                    <li>Avoid clicking on ads - type URLs directly instead</li>
+                </ul>
+
+                <div class="lesson-tip">
+                    <strong>💡 Pro Tip:</strong> Use DuckDuckGo instead of Google for searches. It doesn't track you or create a search history profile.
+                </div>
+            </div>
+        `
+    },
+    
+    'secure-devices': {
+        title: "Securing Your Devices",
+        icon: "💻",
+        content: `
+            <div class="lesson-section">
+                <h2>Device Security Fundamentals</h2>
+                <p>Your devices contain your entire digital life. Securing them properly is essential for protecting your data, privacy, and identity.</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Computer Security (Windows/Mac)</h2>
+                
+                <h3>Essential Security Measures:</h3>
+                
+                <p><strong>1. Operating System Updates</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Enable automatic updates</li>
+                    <li>Install security patches immediately</li>
+                    <li>Keep Windows/macOS current</li>
+                </ul>
+
+                <p><strong>2. Antivirus Protection</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Windows Defender (built-in) is excellent</li>
+                    <li>Malwarebytes for additional scanning</li>
+                    <li>Run weekly scans</li>
+                </ul>
+
+                <p><strong>3. Firewall</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Enable built-in firewall</li>
+                    <li>Block incoming connections by default</li>
+                    <li>Review allowed apps periodically</li>
+                </ul>
+
+                <p><strong>4. Disk Encryption</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Windows: BitLocker</li>
+                    <li>Mac: FileVault</li>
+                    <li>Protects data if device is stolen</li>
+                </ul>
+
+                <p><strong>5. User Accounts</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Use standard account for daily use</li>
+                    <li>Only use admin account when needed</li>
+                    <li>Separate accounts for family members</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Mobile Device Security (iPhone/Android)</h2>
+                
+                <h3>Smartphone Security Checklist:</h3>
+                
+                <p><strong>1. Lock Screen</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Use biometric (Face ID/fingerprint) + PIN</li>
+                    <li>Minimum 6-digit PIN</li>
+                    <li>Auto-lock after 30 seconds</li>
+                </ul>
+
+                <p><strong>2. App Permissions</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Review all app permissions monthly</li>
+                    <li>Location: "While Using" not "Always"</li>
+                    <li>Deny camera/mic to apps that don't need it</li>
+                    <li>Limit contacts access</li>
+                </ul>
+
+                <p><strong>3. App Sources</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Only install from official stores</li>
+                    <li>iPhone: App Store only</li>
+                    <li>Android: Google Play only</li>
+                    <li>Check app permissions before installing</li>
+                </ul>
+
+                <p><strong>4. Find My Device</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Enable Find My iPhone/Android</li>
+                    <li>Test remote wipe capability</li>
+                    <li>Note: Can erase data if stolen</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Physical Security</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>Never leave devices unattended</strong> in public</li>
+                    <li><strong>Lock screen</strong> when stepping away</li>
+                    <li><strong>Use privacy screens</strong> in public places</li>
+                    <li><strong>Cover webcam</strong> when not in use</li>
+                    <li><strong>Secure home WiFi</strong> with WPA3 encryption</li>
+                </ul>
+
+                <div class="lesson-tip">
+                    <strong>💡 Pro Tip:</strong> Before selling or donating a device, perform a factory reset AND encrypt it first. This makes data recovery impossible.
+                </div>
+            </div>
+        `
+    },
+    
+    malware: {
+        title: "Understanding Malware",
+        icon: "🦠",
+        content: `
+            <div class="lesson-section">
+                <h2>What is Malware?</h2>
+                <p>Malware (malicious software) is any program designed to harm your computer, steal data, or take control of your system. It's one of the biggest cybersecurity threats.</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Types of Malware</h2>
+                
+                <h3>1. Ransomware</h3>
+                <p>Encrypts all your files and demands payment (usually Bitcoin) to decrypt them.</p>
+                <div class="lesson-warning">
+                    <strong>⚠️ Impact:</strong> Businesses have paid millions. Individuals often lose all photos, documents forever. NEVER pay - no guarantee you'll get files back.
+                </div>
+
+                <h3 style="margin-top: 20px;">2. Viruses</h3>
+                <p>Attach to legitimate files and spread when you share those files. Can corrupt data, delete files, or steal information.</p>
+
+                <h3 style="margin-top: 20px;">3. Trojans</h3>
+                <p>Disguised as legitimate software but contain malicious code. Named after the Greek Trojan Horse.</p>
+                <div class="lesson-example">
+                    <strong>Example:</strong> "Free Adobe Photoshop download" that actually installs spyware
+                </div>
+
+                <h3 style="margin-top: 20px;">4. Spyware/Keyloggers</h3>
+                <p>Secretly monitors your activity, records keystrokes, captures screenshots, steals passwords and credit card numbers.</p>
+
+                <h3 style="margin-top: 20px;">5. Adware</h3>
+                <p>Bombards you with unwanted ads, slows computer, tracks browsing to sell data to advertisers.</p>
+
+                <h3 style="margin-top: 20px;">6. Rootkits</h3>
+                <p>Hides deep in system, gives attackers admin access, very difficult to detect and remove.</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>How Malware Spreads</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>Email attachments:</strong> "Invoice.pdf.exe" or Word docs with macros</li>
+                    <li><strong>Fake downloads:</strong> "Download" buttons that are actually ads</li>
+                    <li><strong>Software cracks:</strong> Pirated software bundled with malware</li>
+                    <li><strong>USB drives:</strong> Infected drives from unknown sources</li>
+                    <li><strong>Malicious websites:</strong> Drive-by downloads</li>
+                    <li><strong>Fake updates:</strong> "Your Flash Player is out of date"</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Protection Strategies</h2>
+                
+                <h3>Prevention (Best Defense):</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Keep software updated</strong> - patches fix vulnerabilities</li>
+                    <li><strong>Use antivirus</strong> - Windows Defender is good</li>
+                    <li><strong>Don't open suspicious attachments</strong> - when in doubt, don't</li>
+                    <li><strong>Only download from official sources</strong> - never use "cracked" software</li>
+                    <li><strong>Use ad-blockers</strong> - uBlock Origin prevents malicious ads</li>
+                    <li><strong>Regular backups</strong> - 3-2-1 rule protects against ransomware</li>
+                </ol>
+
+                <div class="lesson-tip">
+                    <strong>💡 3-2-1 Backup Rule:</strong> 3 copies of data, 2 different storage types, 1 offsite backup
+                </div>
+            </div>
+        `
+    },
+    
+    privacy: {
+        title: "Online Privacy Protection",
+        icon: "🔒",
+        content: `
+            <div class="lesson-section">
+                <h2>Understanding Digital Privacy</h2>
+                <p>Every time you go online, you leave digital footprints. Companies, advertisers, hackers, and governments can track what you do, where you go, and what you buy.</p>
+                
+                <p><strong>You're being tracked more than you think:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Google knows your search history, location, YouTube habits</li>
+                    <li>Facebook tracks you even on other websites</li>
+                    <li>Your ISP sees every website you visit</li>
+                    <li>Apps access contacts, location, camera, microphone</li>
+                    <li>Data brokers collect and sell your information</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Social Media Privacy</h2>
+                
+                <h3>Facebook/Meta Settings:</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Settings → Privacy → Set all to "Friends" not "Public"</li>
+                    <li>Turn off facial recognition</li>
+                    <li>Review app permissions → Remove old apps</li>
+                    <li>Limit ad tracking: Settings → Ads → Less personalization</li>
+                    <li>Download your data to see what Facebook knows</li>
+                </ol>
+
+                <h3 style="margin-top: 20px;">Instagram Settings:</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Make account private</li>
+                    <li>Disable activity status</li>
+                    <li>Turn off location services</li>
+                    <li>Review who can tag you</li>
+                </ol>
+
+                <h3 style="margin-top: 20px;">Twitter/X Settings:</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Protect your tweets (if desired)</li>
+                    <li>Disable location tagging</li>
+                    <li>Turn off personalized ads</li>
+                    <li>Review connected apps</li>
+                </ol>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Browser Privacy</h2>
+                
+                <h3>Essential Browser Extensions:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>uBlock Origin:</strong> Blocks ads and trackers</li>
+                    <li><strong>Privacy Badger:</strong> Blocks invisible trackers</li>
+                    <li><strong>HTTPS Everywhere:</strong> Forces encrypted connections</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">Browser Settings:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Use private/incognito mode for sensitive browsing</li>
+                    <li>Disable third-party cookies</li>
+                    <li>Clear cookies and cache regularly</li>
+                    <li>Use DuckDuckGo instead of Google for searches</li>
+                </ul>
+
+                <div class="lesson-tip">
+                    <strong>💡 Privacy-Focused Browsers:</strong> Brave (built-in ad blocking), Firefox (strong privacy settings), Tor (maximum anonymity)
+                </div>
+            </div>
+        `
+    },
+    
+    'kids-safety': {
+        title: "Teaching Kids Internet Safety",
+        icon: "👶",
+        content: `
+            <div class="lesson-section">
+                <h2>Age-Appropriate Internet Safety</h2>
+                <p>Children face unique online risks: cyberbullying, predators, inappropriate content, and privacy violations. Teaching them safe online behavior is as important as teaching them to look both ways before crossing the street.</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Safety by Age Group</h2>
+                
+                <h3>Ages 5-8: Foundations</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Never share personal information (name, address, school, phone)</li>
+                    <li>Tell parent immediately if something makes them uncomfortable</li>
+                    <li>Don't click on ads or pop-ups</li>
+                    <li>Only use kid-approved websites with supervision</li>
+                    <li>Understand not everything online is true</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">Ages 9-12: Building Skills</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Create strong passwords (with parent's help)</li>
+                    <li>Recognize suspicious emails and messages</li>
+                    <li>Understand people online may not be who they claim</li>
+                    <li>Think before posting - it's permanent</li>
+                    <li>Report cyberbullying to parents/teachers</li>
+                    <li>Limit screen time and take breaks</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">Ages 13-17: Independence with Oversight</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Manage privacy settings on social media</li>
+                    <li>Recognize and avoid online scams</li>
+                    <li>Understand digital footprint affects college/jobs</li>
+                    <li>Practice healthy social media habits</li>
+                    <li>Know how to block and report inappropriate content</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Warning Signs for Parents</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Quickly switching screens when you enter room</li>
+                    <li>Being secretive about online activities</li>
+                    <li>Receiving gifts from unknown sources</li>
+                    <li>Changes in behavior after online time</li>
+                    <li>Withdrawal from family activities</li>
+                    <li>Using internet at unusual hours</li>
+                </ul>
+
+                <div class="lesson-warning">
+                    <strong>⚠️ If you see these signs:</strong> Have a calm, non-judgmental conversation. Children need to feel safe telling you about online problems.
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Family Safety Rules</h2>
+                
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Devices in common areas</strong> - No internet in bedrooms</li>
+                    <li><strong>Screen time limits</strong> - Use parental control apps</li>
+                    <li><strong>Parents know passwords</strong> - You should have access to kids' accounts</li>
+                    <li><strong>Friend/follow your kids</strong> - Stay aware of social media</li>
+                    <li><strong>No messaging strangers</strong> - Period</li>
+                    <li><strong>Regular check-ins</strong> - Discuss online experiences openly</li>
+                    <li><strong>Model good behavior</strong> - Parents practice safe habits too</li>
+                </ol>
+            </div>
+        `
+    },
+    
+    'parental-controls': {
+        title: "Setting Up Parental Controls",
+        icon: "🔧",
+        content: `
+            <div class="lesson-section">
+                <h2>Comprehensive Parental Control Setup</h2>
+                <p>Parental controls help manage what children access online, limit screen time, and monitor digital activities.</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Built-In Platform Controls</h2>
+                
+                <h3>Windows Family Safety:</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Create child account: Settings → Family</li>
+                    <li>Set screen time limits and schedules</li>
+                    <li>Filter websites (allow or block specific sites)</li>
+                    <li>Monitor app usage and block apps</li>
+                    <li>Receive weekly activity reports via email</li>
+                </ol>
+
+                <h3 style="margin-top: 20px;">Apple Screen Time (iOS/macOS):</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Settings → Screen Time → Turn On</li>
+                    <li>Set Downtime (hours when device locked)</li>
+                    <li>App Limits (time per category)</li>
+                    <li>Content & Privacy Restrictions</li>
+                    <li>Block explicit content, in-app purchases, location sharing</li>
+                </ol>
+
+                <h3 style="margin-top: 20px;">Google Family Link (Android):</h3>
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Download Family Link app on your phone</li>
+                    <li>Set up child's Google account</li>
+                    <li>Approve or block apps before download</li>
+                    <li>Set screen time limits and bedtime</li>
+                    <li>See location of child's device</li>
+                    <li>Remotely lock device</li>
+                </ol>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Third-Party Software</h2>
+                
+                <p><strong>Qustodio (Recommended):</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Works on all platforms</li>
+                    <li>Real-time location tracking</li>
+                    <li>Social media monitoring</li>
+                    <li>Detailed activity reports</li>
+                    <li>Free version available</li>
+                </ul>
+
+                <p><strong>Bark:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Monitors texts, social media, emails</li>
+                    <li>AI detects cyberbullying, predators, depression</li>
+                    <li>Alerts parents to dangers</li>
+                    <li>$99/year unlimited children</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Router-Level Controls</h2>
+                
+                <p>Control internet for ALL devices on home network:</p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>OpenDNS FamilyShield:</strong> Free, blocks adult content network-wide</li>
+                    <li><strong>Router settings:</strong> Most have built-in parental controls</li>
+                    <li>Set internet schedules (no internet after 9pm)</li>
+                    <li>Block specific websites</li>
+                    <li>Pause internet for specific devices</li>
+                </ul>
+            </div>
+        `
+    },
+    
+    'elderly-safety': {
+        title: "Protecting Seniors from Scams",
+        icon: "👴",
+        content: `
+            <div class="lesson-section">
+                <h2>Why Seniors Are Targeted</h2>
+                <p>Seniors lose an estimated $3 billion per year to scams.</p>
+                
+                <p><strong>Why they're targeted:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Often have substantial savings and good credit</li>
+                    <li>Less familiar with modern technology</li>
+                    <li>More trusting and polite</li>
+                    <li>May be isolated and eager for interaction</li>
+                    <li>Sometimes experiencing cognitive decline</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Common Scams Targeting Seniors</h2>
+                
+                <h3>1. Grandparent Scam</h3>
+                <div class="lesson-example">
+                    <strong>The Scam:</strong> "Grandma, it's me! I'm in trouble - arrested/accident/stranded. I need money wired immediately. Don't tell Mom and Dad!"<br><br>
+                    <strong>Defense:</strong> ALWAYS verify by calling grandchild directly. Ask questions only real grandchild would know. Never wire money without confirmation.
+                </div>
+
+                <h3 style="margin-top: 20px;">2. Tech Support Scam</h3>
+                <div class="lesson-example">
+                    <strong>The Scam:</strong> Pop-up or call claiming computer has virus. "Microsoft" wants to fix it remotely for a fee.<br><br>
+                    <strong>Defense:</strong> Microsoft/Apple NEVER call unsolicited. Hang up immediately. Never give remote access.
+                </div>
+
+                <h3 style="margin-top: 20px;">3. Medicare/Social Security Scam</h3>
+                <div class="lesson-example">
+                    <strong>The Scam:</strong> "Your Medicare card needs updating" or "Benefits will be suspended unless you verify information."<br><br>
+                    <strong>Defense:</strong> Government agencies don't call asking for personal info. They send official mail.
+                </div>
+
+                <h3 style="margin-top: 20px;">4. IRS Scam</h3>
+                <div class="lesson-example">
+                    <strong>The Scam:</strong> Threatening call about unpaid taxes, arrest warrant, lawsuit unless immediate payment via gift cards.<br><br>
+                    <strong>Defense:</strong> IRS contacts by mail first, never demands gift cards, never threatens arrest over phone.
+                </div>
+
+                <h3 style="margin-top: 20px;">5. Romance Scam</h3>
+                <div class="lesson-example">
+                    <strong>The Scam:</strong> Develops online relationship over weeks/months, then has "emergency" needing money.<br><br>
+                    <strong>Defense:</strong> Never send money to someone only met online. Video chat to verify identity.
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>How Family Members Can Help</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Have regular conversations about scams (not condescending)</li>
+                    <li>Offer to help with technology</li>
+                    <li>Set up call screening - block unknown numbers</li>
+                    <li>Monitor financial accounts (with permission)</li>
+                    <li>Establish family code word for emergency money requests</li>
+                    <li>Be their tech support - they won't need strangers</li>
+                    <li>Sign up for Do Not Call Registry</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Simple Rules for Seniors</h2>
+                
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Never give personal info over phone</strong> unless YOU initiated call</li>
+                    <li><strong>Hang up on pressure tactics</strong> - legitimate business waits</li>
+                    <li><strong>No wire transfers or gift cards</strong> for unexpected requests</li>
+                    <li><strong>When in doubt, ask family first</strong> - verify "emergencies"</li>
+                    <li><strong>Don't click email links</strong> - type website addresses yourself</li>
+                    <li><strong>If too good to be true, it is</strong></li>
+                </ol>
+            </div>
+        `
+    },
+    
+    'business-security': {
+        title: "Small Business Cybersecurity",
+        icon: "🏢",
+        content: `
+            <div class="lesson-section">
+                <h2>Why Small Businesses Are Targeted</h2>
+                <p>43% of cyberattacks target small businesses, but only 14% are prepared.</p>
+                
+                <p><strong>Why you're a target:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Weaker security than large enterprises</li>
+                    <li>Valuable customer data and financial info</li>
+                    <li>Often lack dedicated IT security staff</li>
+                    <li>More likely to pay ransoms</li>
+                    <li>Gateway to larger companies you work with</li>
+                </ul>
+
+                <div class="lesson-warning">
+                    <strong>⚠️ Critical Stat:</strong> 60% of small businesses that experience a cyberattack go out of business within 6 months.
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Essential Security Measures</h2>
+                
+                <h3>1. Employee Training (Most Important!):</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Regular cybersecurity awareness training</li>
+                    <li>Phishing simulation tests</li>
+                    <li>Written security policies</li>
+                    <li>Incident reporting procedures</li>
+                    <li>Make it easy to ask questions</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">2. Access Control:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Principle of least privilege (minimum access needed)</li>
+                    <li>Immediate revocation when employees leave</li>
+                    <li>Regular access audits</li>
+                    <li>Separate admin and user accounts</li>
+                    <li>2FA required for all business accounts</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">3. Data Protection:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Regular backups (3-2-1 rule)</li>
+                    <li>Encrypt sensitive data</li>
+                    <li>Classify data by sensitivity</li>
+                    <li>Secure disposal of old hardware</li>
+                    <li>Data retention policies</li>
+                </ul>
+
+                <div class="lesson-tip">
+                    <strong>💡 3-2-1 Backup Rule:</strong> 3 copies, 2 different media types, 1 offsite
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Technical Security Measures</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Business-grade firewall</li>
+                    <li>Antivirus on all devices</li>
+                    <li>Automatic security updates</li>
+                    <li>Email filtering and spam protection</li>
+                    <li>VPN for remote workers</li>
+                    <li>Mobile device management (MDM)</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Cyber Insurance</h2>
+                <p>Consider cyber liability insurance: $1,000-$7,500/year depending on size.</p>
+                
+                <p><strong>Coverage includes:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Data breach response costs</li>
+                    <li>Legal fees and customer notification</li>
+                    <li>Business interruption</li>
+                    <li>Ransomware payments (if necessary)</li>
+                </ul>
+            </div>
+        `
+    },
+    
+    'employee-training': {
+        title: "Employee Security Training",
+        icon: "👥",
+        content: `
+            <div class="lesson-section">
+                <h2>Why Employee Training Matters</h2>
+                <p>95% of cybersecurity breaches are caused by human error. Your employees are either your strongest defense or weakest link.</p>
+                
+                <p>Investing in training is far cheaper than recovering from a breach!</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Building a Security Culture</h2>
+                
+                <h3>Make Security Everyone's Job:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Include security in job descriptions and reviews</li>
+                    <li>Reward employees who report suspicious activity</li>
+                    <li>Never punish someone for admitting they clicked phishing link</li>
+                    <li>Leadership must model good security behavior</li>
+                    <li>Make reporting easy and anonymous if needed</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Training Program Structure</h2>
+                
+                <h3>Onboarding (Day 1):</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Review security policies</li>
+                    <li>Set up 2FA on all accounts</li>
+                    <li>Password manager training</li>
+                    <li>Device security basics</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">Quarterly Training:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>30-minute sessions on rotating topics</li>
+                    <li>Phishing, social engineering, password security</li>
+                    <li>Real-world examples from recent news</li>
+                    <li>Interactive exercises</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">Phishing Simulations:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Send fake phishing emails monthly</li>
+                    <li>Track who clicks (for training, not punishment)</li>
+                    <li>Immediate training for those who fail</li>
+                    <li>Gradually increase difficulty</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Key Topics to Cover</h2>
+                
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Password security and password managers</li>
+                    <li>Two-factor authentication</li>
+                    <li>Recognizing phishing emails</li>
+                    <li>Social engineering tactics</li>
+                    <li>Physical security (locking screens, securing devices)</li>
+                    <li>Safe browsing and downloading</li>
+                    <li>Mobile device security</li>
+                    <li>Public WiFi dangers</li>
+                    <li>Data classification and handling</li>
+                    <li>Incident reporting procedures</li>
+                    <li>BYOD policies</li>
+                    <li>Remote work security</li>
+                </ol>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Measuring Success</h2>
+                
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li><strong>Phishing click rates:</strong> Should decrease over time</li>
+                    <li><strong>Security incident reports:</strong> Should increase (more awareness)</li>
+                    <li><strong>Password strength:</strong> Monitor for reused/weak passwords</li>
+                    <li><strong>2FA adoption:</strong> Track percentage using 2FA</li>
+                    <li><strong>Training completion:</strong> Ensure 100% participation</li>
+                </ul>
+
+                <div class="lesson-tip">
+                    <strong>💡 Make It Engaging:</strong> Use gamification, prizes, real case studies, interactive scenarios. Engaged employees retain more!
+                </div>
+            </div>
+        `
+    },
+    
+    'incident-response': {
+        title: "Incident Response Planning",
+        icon: "🚨",
+        content: `
+            <div class="lesson-section">
+                <h2>Why You Need an Incident Response Plan</h2>
+                <p>When a security incident occurs, every minute counts. Having a written plan BEFORE an incident saves time, money, and reputation.</p>
+                
+                <p><strong>Without a plan:</strong> Panic, confusion, poor decisions, delays, greater damage</p>
+                <p><strong>With a plan:</strong> Swift action, clear roles, minimal damage, faster recovery</p>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Incident Response Steps</h2>
+                
+                <h3>1. Preparation (Before Incident):</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Create response team with clear roles</li>
+                    <li>Document all systems and assets</li>
+                    <li>Maintain current backups</li>
+                    <li>Establish communication channels</li>
+                    <li>Have legal counsel contact info ready</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">2. Detection & Analysis:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>How will you know if breach occurred?</li>
+                    <li>Monitor logs and alerts</li>
+                    <li>Investigate suspicious activity</li>
+                    <li>Determine scope of incident</li>
+                    <li>Document everything</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">3. Containment:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Isolate affected systems immediately</li>
+                    <li>Don't destroy evidence</li>
+                    <li>Change compromised passwords</li>
+                    <li>Block attacker access</li>
+                    <li>Preserve forensic data</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">4. Eradication:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Remove malware/backdoors</li>
+                    <li>Patch vulnerabilities</li>
+                    <li>Strengthen security controls</li>
+                    <li>Verify systems are clean</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">5. Recovery:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Restore from clean backups</li>
+                    <li>Monitor for reinfection</li>
+                    <li>Gradually bring systems online</li>
+                    <li>Verify normal operations</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">6. Lessons Learned:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>What happened and why?</li>
+                    <li>What worked? What didn't?</li>
+                    <li>How to prevent future incidents?</li>
+                    <li>Update response plan</li>
+                    <li>Additional training needed?</li>
+                </ul>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Communication Plan</h2>
+                
+                <h3>Who to notify:</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #475569;">
+                    <li>Management and executives</li>
+                    <li>Legal counsel</li>
+                    <li>Law enforcement (if criminal)</li>
+                    <li>Affected customers (legally required in many cases)</li>
+                    <li>Media (if public incident)</li>
+                    <li>Cyber insurance provider</li>
+                </ul>
+
+                <div class="lesson-warning">
+                    <strong>⚠️ Legal Requirements:</strong> Many jurisdictions require customer notification within 72 hours of data breach. Know your obligations!
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h2>Building Your Plan</h2>
+                
+                <ol style="margin-left: 20px; line-height: 1.8;">
+                    <li>Download incident response template</li>
+                    <li>Customize for your business</li>
+                    <li>Assign roles and responsibilities</li>
+                    <li>Create contact lists (updated quarterly)</li>
+                    <li>Document all systems and data</li>
+                    <li>Practice with tabletop exercises</li>
+                    <li>Review and update annually</li>
+                </ol>
+
+                <div class="lesson-tip">
+                    <strong>💡 Test Your Plan:</strong> Run a simulated incident once a year. You'll find gaps and areas for improvement.
+                </div>
+            </div>
+        `
+    },
+    
     vpn: {
         title: "VPNs and Encryption",
         icon: "🛡️",
@@ -690,12 +1544,16 @@ function openLesson(lessonId) {
     const modal = document.getElementById('lessonModal');
     const content = document.getElementById('lessonContent');
     
+    // Check if already completed
+    const isCompleted = userData.completedLessonIds && userData.completedLessonIds.includes(lessonId);
+    
     content.innerHTML = `
         <div style="text-align: center; font-size: 4em; margin-bottom: 16px;">${lesson.icon}</div>
         <h1 id="lessonTitle" style="color: #1e293b; font-size: 2.5em; margin-bottom: 32px; text-align: center;">${lesson.title}</h1>
+        ${isCompleted ? '<div style="background: #dcfce7; border: 2px solid #22c55e; color: #166534; padding: 16px; border-radius: 10px; text-align: center; margin-bottom: 24px; font-weight: 600;"><strong>✅ You\'ve completed this lesson!</strong></div>' : ''}
         ${lesson.content}
-        <button class="btn" onclick="completeLesson('${lessonId}')" style="width: 100%; margin-top: 24px;">
-            ✅ Mark Complete
+        <button class="btn" onclick="completeLesson('${lessonId}')" style="width: 100%; margin-top: 24px;" ${isCompleted ? 'disabled' : ''}>
+            ${isCompleted ? '✅ Lesson Completed' : '📝 Mark as Complete'}
         </button>
     `;
     
@@ -705,7 +1563,9 @@ function openLesson(lessonId) {
     // Focus management for accessibility
     modal.querySelector('button').focus();
     
-    updateShieldScore(20, 'Lesson Started');
+    if (!isCompleted) {
+        updateShieldScore(20, 'Lesson Started');
+    }
 }
 
 // Close lesson
